@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BlurredImageView">
+        <attr name="radius"         format="float" />
+        <attr name="downSampling"   format="float" />
+        <attr name="keepOriginal"   format="boolean" />
+    </declare-styleable>
+</resources>
