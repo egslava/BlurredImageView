@@ -46,8 +46,8 @@ Usage
     app:keepOriginal="true"
     app:downSampling="2" />
 ```
-radius - "blureness" [0..1]
-keepOriginal - (default false). if set to false you can't make image sharper if you change radius to less value. If it set to false every time you change radius it will blur already blured image. If `keepOriginal` set to true it will blur original instead of blurred image. Of course to keep original you need more memory so if you need to have just statially blurred image just keep it with default value.
+ - radius - "blureness" [0..1]
+ - keepOriginal - (default false). if set to false you can't make image sharper if you change radius to less value. If it set to false every time you change radius it will blur already blured image. If `keepOriginal` set to true it will blur original instead of blurred image. Of course to keep original you need more memory so if you need to have just statially blurred image just keep it with default value.
 
 License
 ----------
