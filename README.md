@@ -31,9 +31,6 @@ android {
         renderscriptSupportMode true
     }
 }
-repositories {
-    maven { url  "http://dl.bintray.com/egorenkov/maven" }
-}
 ```
 
 Usage
