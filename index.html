@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Blurredimageview by egslava</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Blurredimageview</h1>
+      <h2 class="project-tagline">Blurred ImageView for your android designes</h2>
+      <a href="https://github.com/egslava/BlurredImageView" class="btn">View on GitHub</a>
+      <a href="https://github.com/egslava/BlurredImageView/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/egslava/BlurredImageView/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="blurredimageview" class="anchor" href="#blurredimageview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BlurredImageView</h1>
+
+<p>Blurred ImageView for your android designs. </p>
+
+<p>This project uses <a href="https://github.com/Manabu-GT/EtsyBlur">Manabu-GT EtsyBlur</a> project for applying fast blur on ImageViews in your android application. While Manabu-GT is used for bluring Bitmaps that project provides easy integration with bluring ImageViews in your Android App this library gives you a super simple integrations with blurred ImageViews.</p>
+
+<h2>
+<a id="etsyblur" class="anchor" href="#etsyblur" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EtsyBlur</h2>
+
+<p>EtsyBlur is an Android library that allows developers to easily add a glass-like effect 
+implemented in the <a href="https://play.google.com/store/apps/details?id=com.etsy.android">Etsy</a> app.</p>
+
+<p><img src="https://raw.github.com/Manabu-GT/EtsyBlur/master/art/readme_demo.gif" width="244" height="415" alt="Quick Demo"></p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>API Level 8 (Froyo) and above.</p>
+
+<h2>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h2>
+
+<p>The library is pushed to Maven Central as an AAR, so you just need to add the followings to your <strong><em>build.gradle</em></strong> file:</p>
+
+<div class="highlight highlight-source-groovy"><pre>dependencies {
+    compile <span class="pl-s"><span class="pl-pds">'</span>ru.egslava:blurredview:1.0<span class="pl-pds">'</span></span>
+}
+
+android {
+    defaultConfig {
+        renderscriptTargetApi <span class="pl-c1">22</span>
+        renderscriptSupportMode <span class="pl-c1">true</span>
+    }
+}</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-k">&lt;</span><span class="pl-smi">ru.egslava.blurredview<span class="pl-k">.</span>BlurredImageView</span>
+    <span class="pl-c1">...</span>
+    android<span class="pl-k">:</span>src<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>@drawable/...<span class="pl-pds">"</span></span>
+    app<span class="pl-k">:</span>radius<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>0.3<span class="pl-pds">"</span></span>
+    app<span class="pl-k">:</span>keepOriginal<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+    app<span class="pl-k">:</span>downSampling<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> <span class="pl-k">/</span><span class="pl-k">&gt;</span></pre></div>
+
+<ul>
+<li>radius - "blureness" [0..1]</li>
+<li>keepOriginal - (default false). if set to false you can't make image sharper if you change radius to less value. If it set to false every time you change radius it will blur already blured image. If <code>keepOriginal</code> set to true it will blur original instead of blurred image. Of course to keep original you need more memory so if you need to have just statially blurred image just keep it with default value.</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code> Copyright 2015 Viacheslav Egorenkov
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/egslava/BlurredImageView">Blurredimageview</a> is maintained by <a href="https://github.com/egslava">egslava</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
