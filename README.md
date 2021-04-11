@@ -1,3 +1,5 @@
+**Announcement**: [let's travel the world](https://github.com/egslava/edittext-mask/issues/65)! or let's just be guests :)
+
 # BlurredImageView
 Blurred ImageView for your android designs. 
 
@@ -19,6 +21,8 @@ API Level 8 (Froyo) and above.
 Setup
 ------
 The library is pushed to Maven Central as an AAR, so you just need to add the followings to your ***build.gradle*** file:
+
+**Announcement**: [let's travel the world](https://github.com/egslava/edittext-mask/issues/65)! or let's just be guests :)
 
 ```groovy
 dependencies {
